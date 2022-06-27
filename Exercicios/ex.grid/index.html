@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            
+            margin: 0;
+            height: 100vh;
+
+            display: grid;
+            grid-template-areas: "header header" "main aside" "footer footer";
+
+            grid-template-rows: 50px auto 30px;
+            grid-template-columns: auto 200px;
+        }
+
+        header{
+            grid-area: header;
+            background-color: green;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
+
+        main{
+            grid-area: main;
+            background-color: rgb(241, 65, 65);
+        }
+
+        aside{
+            grid-area: aside;
+            background-color: rgb(70, 70, 245);
+        }
+
+        footer{
+            grid-area: footer;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Logo</div>
+        <div>Menu</div>
+    </header>
+
+    <main>Conteúdo</main>
+
+    <aside>Infos adicionais</aside>
+
+    <footer>Rodapé</footer>
+</body>
+</html>
